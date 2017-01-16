@@ -4,3 +4,5 @@ app.js.map
 npm-debug.log
 intermediates/*.js
 intermediates/*.js.map
+client/*.js
+client/*.js.map
