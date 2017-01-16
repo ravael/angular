@@ -6,3 +6,8 @@ intermediates/*.js
 intermediates/*.js.map
 client/*.js
 client/*.js.map
+client/app/*.js
+client/app/*.js.map
+client/**/*.js
+client/**/*.js.map
+client/*.*
