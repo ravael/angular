@@ -17,9 +17,9 @@ export class ListagemComponent {
             .map(res => res.json())
             //subscribe se inscreve no retorno da requisição tranformado em json
             .subscribe(fotos => {
-                //o retorno ja transformado em json e atribuido a propriedade do component
+                //o retorno ja transformado em json e atribuido a propriedade do component(fotos)
                 this.fotos = fotos;
-                console.log(this.fotos);
+                //console.log(this.fotos);
             }, erro => console.log(erro))
         
     }
