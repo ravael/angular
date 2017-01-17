@@ -12,6 +12,6 @@ export class PainelComponent implements OnInit{
     @Input() titulo: string;
 
     ngOnInit(){
-        this.titulo =  this.titulo.length > 7 ? this.titulo.substr(0,7) +  '...' : this.titulo;
+        //this.titulo =  this.titulo.length > 7 ? this.titulo.substr(0,7) +  '...' : this.titulo;
     }
 }
