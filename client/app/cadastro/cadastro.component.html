@@ -1,4 +1,5 @@
 <div class="container">
+     <p *ngIf="mensagem.length" class="alert alert-info">{{mensagem}}</p>
     <h1 class="text-cente">{{foto.titulo}}</h1>
 
     <form [formGroup]="meuForm" class="row" (submit)="cadastrar($event)">
@@ -50,8 +51,8 @@
             <hr>
         </div>
         <div class="col-md-6">
-        <painel titulo="{{foto.titulo}}">
-            <foto url="{{foto.url}}" titulo="{{foto.titulo}}"></foto>
+        <painel titulo="{{foto.titulo}}" *ngIf="!meuForm.controls.url.invalid">
+                <foto url="{{foto.url}}" titulo="{{foto.titulo}}"></foto>
         </painel>
         </div>
     </form>
